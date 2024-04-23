@@ -12,8 +12,6 @@ public class LoginPage extends BasePage{
     public SelenideElement loginButton = $(By.xpath("//button[@type='submit']"));
 
     public void login(String login, String password){
-
-
         userNameField.setValue(login);
         passwordField.setValue(password);
         loginButton.click();
